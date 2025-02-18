@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvan Kumar</title>
+    <link rel="icon" href="s.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            ::-webkit-scrollbar {
+            width: 5px;
+            }
+
+            ::-webkit-scrollbar-track {
+            background: black;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+            background: cyan;
+            border-radius: 10px;
+            height: 2rem;
+            }
+   }
+
+        body {
+            background: #000000;
+            font-family: 'Poppins', sans-serif;
+           
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            background-color: #000000;
+            border-bottom: 1px solid cyan;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 1rem;
+            background-color: #000000;
+            border-radius: 1rem;
+        }
+
+        nav ul li a:hover {
+            background-color: cyan;
+            color: #000000;
+            scale: 1.1;
+            transition: background-color ease 0.5s;
+            transition: scale ease 0.5s;
+            padding: 0.3rem;
+            border-radius: 0.7rem;
+            transition: padding ease 0.3s;
+            transform: scale(1.5);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            scale: 1;
+            color: cyan;
+        }
+
+        .left a {
+            font-size: 1.2rem;
+            color: cyan;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.5s;
+        }
+
+        .firstsection {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .s-container {
+            min-height: 80vh;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+
+            .title {
+            font-size: 3.8rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: cyan;
+        }
+
+            .title span {
+            font-weight: 700;
+            color: lightseagreen;
+        }
+
+        .subtitle {
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: cyan;
+            font-size: 1.8rem;
+        }
+
+        .my-img{
+            max-width: 50vw;
+            width: 98%;
+            height: auto;
+            background-attachment:scroll;
+            box-shadow: 0 0 10px 10px cyan;
+        }
+
+        .secondsection {
+            padding: 1rem;
+            color: cyan;
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            flex-wrap: wrap;
+            animation: scroll linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 50%;
+        }
+
+        .thirdsection, .fourthsection, .sixthsection {
+            padding: 1rem;
+            color: cyan;
+            font-size: 1.2rem;
+        }
+
+        .fifthsection {
+            padding: 1rem;
+            color: cyan;
+            font-size: 1.2rem;
+            animation: scroll linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 50%;
+        }
+
+        @keyframes scroll{
+            from{
+                scale: 0.5;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+
+        .wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service, .services{
+            margin-top: 1.4em;
+            text-align: center;
+            flex: 0 1 30%;
+            line-height: 1.4;
+            background-color: #67676741;
+            box-shadow: 0 0 10px 10px rgb(107, 113, 113);
+            transition: 0.5s all;
+            border-radius: 1rem;
+            color: #ffffff;
+            animation: scroll linear;
+            scale:1;
+            overflow: hidden;
+            animation: scroll;
+            animation-timeline: view();
+            animation-range: entry 0 cover 50%;
+         }
+  
+        .service img{
+            overflow: hidden;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .services img{
+            overflow: hidden;
+            max-width: 100%;
+            height: auto;
+        }
+  
+        .service h5{
+            margin: 0.4em 0 0 0;
+        }
+
+        .service a{
+            text-decoration: none;
+            color: cyan;
+        }
+
+        .cft-btn{
+            padding: 0.8rem;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            color: #ffff;
+            background-color: rgb(105, 108, 108);
+            scale: 1;
+            transition: scale ease 0.5s;
+        }
+
+        .cft-btn:hover, .cft-btn:focus{
+            scale: 1.05;
+        }
+
+        .dwl-btn{
+            padding: 0.8rem;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            color: #ffff;
+            background-color: rgb(105, 108, 108);
+            scale: 1;
+            transition: scale ease 0.5s;
+            text-decoration: none;
+        }
+
+        .skills{
+            display: flex;
+            flex-direction: row;
+            padding: 0.5rem;
+            height: auto;
+            gap: 1rem;
+        }
+
+        .skills img{
+            width: 4rem;
+            height: 4rem;
+        }
+
+        .dwl-btn:hover, .dwl-btn:focus{
+            scale: 1.05;
+        }
+
+        .resume{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .r{
+            border: none;
+            box-shadow: none;
+        }
+
+        @media(min-width: 769px){
+            #hiddenOnComputer{
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .left a{
+                text-align: left;
+                font-size: 1.5rem;
+            }
+            nav {
+                height: auto;
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: row;
+                gap: 2rem;
+                align-items: center;
+                width: 100%;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 5px;
+                width: 90%;
+                text-align: center;
+            }
+
+            .new{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-left: 1rem;
+                gap: 1.5rem;
+                margin-bottom: 2rem;
+                margin-top: 1rem;
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .leftsection, .rightsection {
+                width: 100%;
+            }
+
+            .hiddenOnMobile{
+                display: none;
+            }
+
+            .wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .service{
+            margin: 2rem;
+            text-align: center;
+            overflow: hidden;
+            flex: 0 1 100%;
+            transition: 0.5s all;
+            color: #ffffff;
+         }
+
+         .service p{
+            font-size: 1rem;
+         }
+
+         .services p{
+            font-size: 1rem;
+         }
+  
+        .service img{
+            max-width: 100%;
+            height: auto;
+        }
+  
+        .service h5{
+            margin: 0.4em 0 0 0;
+        }
+
+        .services{
+            margin: 1.4rem;
+            text-align: center;
+            overflow: hidden;
+            flex: 0 1 100%;
+            line-height: 1.4;
+            background-color: #67676741;
+            transition: 0.5s all;
+            color: #ffffff;
+         }
+  
+        .services img{
+            max-width: 100%;
+            height: auto;
+        }
+  
+        .services h1{
+            margin: 0.4em 0 0 0;
+        }
+        }
+
+
+            .contact-container{
+                max-width: 50%;
+                background-color: cyan;
+                opacity: 0.3;
+            }
+            .contact{
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+            animation: scroll linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 50%;
+        }
+
+            .contact-inputs{
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                cursor: inherit;
+                background-color: #444;
+                border: 1.5px solid #555;
+                border-radius: 5px;
+                color: black;
+                font-size: 1rem;
+                background-color: cyan;
+            }
+
+            .contact-inputs:hover, .contact-inputs:focus{
+                background-color: #000000;
+                color: cyan;
+                transition: background-color ease-in 0.5s;
+            }
+
+            footer{
+                border-top: 1px solid cyan;
+                background-color: black;
+                text-align: center;
+                color: cyan;
+                padding: 1rem;
+            }
+
+            .quick-links{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="index.html">Portfolio.</a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="hiddenOnMobile"><a href="#about">About</a></li>
+                    <li class="hiddenOnMobile"><a href="#certifications">Certifications</a></li>
+                    <li class="hiddenOnMobile"><a href="#projects">Projects</a></li>
+                    <li class="hiddenOnMobile"><a href="#services">Services</a></li>
+                    <li class="hiddenOnMobile"><a href="#resume">Resume</a></li>
+                    <li class="hiddenOnMobile"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="new">
+            <a href="#about" id="hiddenOnComputer"><img src="hexi.svg"></a>
+            <a href="#certifications" id="hiddenOnComputer"><img src="certificate.svg"></a>
+            <a href="#projects" id="hiddenOnComputer"><img src="pro.svg"></a>
+            <a href="#services" id="hiddenOnComputer"><img src="service.svg"></a>
+            <a href="#resume" id="hiddenOnComputer"><img src="r.svg"></a>
+            <a href="#contact" id="hiddenOnComputer"><img src="contact.svg"></a>
+    </div>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="s-container" id="s-container">
+                <div class="content">
+                  <span class="subtitle"> Hello </span>
+                  <h1 class="title">
+                    I'm <span>Sarvan Kumar <br /></span>A Frontend Developer.
+                  </h1>
+                </div>
+            </div>
+            <div class="first-img">
+                <img class="my-img" src="Sarvan_Cropped.jpg" style="border-radius: 1rem;">
+            </div>
+        </section>
+        <section class="secondsection" id="about">
+            <p class="text-effect"><b>About</b><br><br>Hi there! My name is <b>Nagarampalli Sarvan Kumar</b> and I am currently a first year student pursuing <b>Computer Science Engineering</b> 
+                at <b>Amrita Vishwa Vidyapeetham</b> in <b>Chennai</b>. I am passionate about technology and constantly strive to enhance my skills. 
+                </p><br><br><p>
+                At this point in my life, I am always open to Internships & connecting with professionals in my field and learning from their 
+                experiences.As a friendly and approachable individual, I am always open to new challenges and opportunities. I am a quick learner 
+                and adapt well to new environments, making me a valuable team member.Apart from my academic pursuits, I am an avid reader and love 
+                to explore different genres of literature.
+                </p><br><p>
+                <b>Education:</b><br><br>
+                    1. Bachelor of Technology in Computer Science @ <b>Amrita Vishwa Vidya Peetham</b> - Chennai - July 2024 to Present</li><br><br>
+                    2. Higher Secondary Education @ <b>Ascent Classes</b> - Visakhapatnam - July 2022 to July 2024</li><br><br>
+                    3. Secondary Education @ <b>Sri Chaitanya Schools</b> - Visakhapatnam - July 2016 to July 2022</li><br><br>  
+            </p>
+        </section>
+        <section class="fifthsection" id="certifications">
+            <h1 style="text-align: center;">Certifications</h1><br>
+            <div class="wrapper">
+            <div class="services"><img src="certifications.png"><br><h3>My Certifications</h3><br><p>Click on the Button to View My Certificates<br><br><button onclick="window.open('certifications.html', '_blank')" target="_blank" class="cft-btn">Click Here!</button><br><br></p></div>
+            </div>
+            <br>
+        </section>
+        <section class="thirdsection" id="projects">
+            <h1 style="text-align: center;">Projects</h1><br>
+            <div class="wrapper">
+            <div class="service"><img src="PillpalAi.jpg"><h3>Pillpal AI</h3><p>Smart Medcation Remainder Website <br>(Colllaborated Project)<br><br><a href="https://youtu.be/nJnPuolTFk4">Youtube</a><br><br></p></div>
+            <div class="service"><img src="EDU Nexus.jpg"><h3>EduNexus</h3><p>Guidance Website for Engineering Students<br>(Colllaborated Project)<br><br><a href="https://edunexus-2187.github.io">Website</a><br><br></p></div>
+            </div>
+            <br>
+        </section>
+        <section class="fourthsection" id="services">
+            <h1 style="text-align: center;">Services</h1>
+            <div class="wrapper">
+                <div class="service"><img src="Web.png"><h3>Web Designing</h3><p>Professional in HTML & CSS <br>(Meta Certified)<br><br></p></div>
+                <div class="service"><img src="Video.png"><h3>Video Editing</h3><p>Familiar with Clipchamp, AE<br>(Tharunspeaks.in)<br><br></p></div>
+                <div class="service"><img src="Ghost.png"><h3>Content Creation</h3><p>Familiar with Scripting <br>(Proficient in English)<br><br></p></div>
+                <div class="service"><img src="App.png"><h3>App Designing</h3><p>Working on React JS<br>(Recently won a Hackathon)<br><br></p></div>
+                <div class="service"><img src="Poster.png"><h3>Poster Designing</h3><p>Familiar with Poster Design<br>(Canva)<br><br></p></div>
+                <div class="service"><img src="Project.png"><h3>Project Management</h3><p>Professional in Git & Github<br>(Udemy Certified)<br><br></p></div>
+                <br>
+                </div>
+            </div>
+            <br>
+        </section>
+        <section class="fifthsection" id="resume">
+            <div class="wrapper">
+            <div class="service"><br><h1 style="text-align: center;">Resume</h1><br><div class="resume"><a href="Resume.pdf" download class="dwl-btn">Download</a></div><h4 style="text-align: center;"><br><br><br>Click on the download icon to Download my resume<br><br></h4></div>
+            <div class="service"><h1>Skills</h1><div class="skills"><img src="bootstrap-fill-svgrepo-com.svg" alt="Bootstrap"><img src="css3-svgrepo-com.svg" alt="css"><img src="gitvs.svg" alt="git"><img src="html5-svgrepo-com.svg" alt="html"><img src="js01-svgrepo-com.svg" alt="JS"><img src="jsx-svgrepo-com.svg" alt="JSX"><img src="node-svgrepo-com.svg" alt="node"><img src="react-javascript-js-framework-facebook-svgrepo-com.svg" alt="React"><img src="python-svgrepo-com.svg" alt="python"><img src="java-svgrepo-com.svg" alt="java"></div></div>
+        </div>
+        </section>
+        <section class="sixthsection" id="contact">
+            <form action="https://api.web3forms.com/submit" method="post" class="contact">
+                <div class="contact-title"><h1>Get in Touch!</h1></div>
+                <input type="hidden" name="access_key" value="7af1432a-847c-4679-8b8f-e55d934beb1a">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="text" name="name" placeholder="Name.." class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Email.." class="contact-inputs" required>
+                <input type="tel" name="phone" placeholder="Phone.." class="contact-inputs" required minlength="10">
+                <textarea name="message" placeholder="Your Message.." class="contact-inputs"cols="23" required></textarea>
+                <button type="submit" value="submit" class="contact-inputs">Submit</button><br><br>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p><b>&copy; Sarvan Kumar 2025. All Rights Reserved</b></p>
+        <br>
+        <div class="quick-links">
+        <a href="https://github.com/sarvan-2187"><img src="github.svg" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/nagarampalli-sarvan-kumar-505b2531a"><img src="linkedin.svg" alt="Linkedin"></a>
+        <a href="mailto:sarvankumarnagarampalli478@gmail.com"><img src="gmail.svg" alt="Gmail"></a>
+        </div>
+    </footer>
+</body>
+</html>

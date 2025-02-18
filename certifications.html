@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <link rel="icon" href="certificate.svg">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+    body{
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    }
+    header{
+    margin: 3rem;
+    color:cyan ;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 0.3rem;
+    background-color: #555;
+    }
+
+    h1{
+        color: cyan;
+        text-align: center;
+        margin: 1rem;
+    }
+    .wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .services{
+            padding: 1.6em;
+            margin-top: 1.4em;
+            text-align: center;
+            flex: 0 1 30%;
+            line-height: 1.4;
+            background-color: #555;
+            transition: 0.5s all;
+            gap: 1rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px 10px rgb(107, 113, 113);
+            color: #ffffff;
+         }
+        
+        .services:hover{
+            scale: 1.01;
+        } 
+
+    .btn{
+        padding: 0.8rem;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        color: black;
+        background-color: cyan;
+        scale: 1;
+        transition: scale ease 0.5s;
+    }
+
+    a{
+        text-decoration: none;
+        font-weight: 600;
+        color: black;
+    }
+    .btn:hover{
+        scale: 1.1;
+    }
+
+    @media screen and (max-width: 768px){
+        header{
+            margin: 2rem;
+        }
+        .services{
+            flex: 0 1 100%;
+            box-shadow: 0 0 10px 10px rgb(107, 113, 113);
+            max-width: 80%;
+            margin-bottom: 1rem;
+        }
+
+        
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Certificates & Achievements</h1>
+    </header>
+    <body>
+        <br>
+        <h1>Technical Certifications</h1>
+        <div class="wrapper">
+            <div class="services">
+                <img src="meta.svg"><br>
+                <h3>Meta Front End Developer</h3><br>
+                <h3>Issued by: Meta</h3><br>
+                <h3>Platform: Coursera</h3><br>
+                <button class="btn" onclick="window.open(''), _blank">View</button>
+            </div>
+            <div class="services">
+                <img src="github-1.svg"><br>
+                <h3>Git Github & MarkDown</h3><br>
+                <h3>Issued by: Udemy</h3><br>
+                <h3>Platform: Udemy</h3><br>
+                <button class="btn" onclick="window.open('https://www.udemy.com/certificate/UC-ae4dffab-39e2-4e47-9715-720aae47fd9d/ '), _blank">View</button>
+            </div>
+            <div class="services">
+                <img src="ibm.svg"><br>
+                <h3>IBM Data Analyst</h3><br>
+                <h3>Issued by: IBM Co.</h3><br>
+                <h3>Platform: Coursera</h3><br>
+                <button class="btn" onclick="window.open(''), _blank">View</button>
+            </div>
+            <div class="services">
+                <img src="chatgpt.svg"><br>
+                <h3>Prompt Engg.</h3><br>
+                <h3>Issued by: Udemy</h3><br>
+                <h3>Platform: Udemy</h3><br>
+                <button class="btn" onclick="window.open('https://www.udemy.com/certificate/UC-fbf97692-4f91-4c79-a440-f9a40cb27907/ '), _blank">View</button>
+            </div>
+            <div class="services">
+                <img src="hackerrank.svg"><br>
+                <h3>CSS (Basic)</h3><br>
+                <h3>Issued by: Hackerrank</h3><br>
+                <h3>Platform: Hackerrank</h3><br>
+                <button class="btn" onclick="window.open('https://www.hackerrank.com/certificates/bd5f2797ce74'), _blank">View</button>
+            </div>
+        </div>
+        <h1>Non - Technical Certifications</h1>
+        <div class="wrapper">
+            <div class="services">
+                <img src="EF_SET_logo.svg"><br>
+                <h3>English Proficiency</h3><br>
+                <h3>Issued by: Education First</h3><br>
+                <h3>Platform: EFSET</h3><br>
+                <button class="btn" onclick="window.open('https://cert.efset.org/9b3LED'), _blank">View</button>
+            </div>
+        </div>
+        <h1>Technical Achievements</h1>
+        <div class="wrapper">
+        <div class="services">
+            <img src="lapto.svg"><br>
+            <h3>Flash Hackathon - 1st Prize</h3><br>
+            <h3>Issued by: AVV Chennai</h3><br>
+            <h3>Platform: Tantrotsav 2025</h3><br>
+            <button class="btn" onclick="window.open('flash.html'), _blank">View</button>
+        </div>
+        </div>
+        <h1>Academic Achievements</h1>
+        <div class="wrapper">
+        <div class="services">
+            <img src="academic.svg"><br>
+            <h3>Academic Excellence Award</h3><br>
+            <h3>Issued by: Ascent Classes</h3><br>
+            <h3>Platform: Annual Awards Function</h3><br>
+            <a href="academic.pdf" download class="btn">Download</a>
+        </div>   
+        <div class="services">
+            <img src="academic.svg"><br>
+            <h2>Academics</h2><br>
+            <h3>Secondary Education</h3><br>
+            <h3>Higher Secondary Education</h3><br>
+            <button class="btn" onclick="window.open('flash.html'), _blank">View</button>
+        </div>
+        </div>
+        <br><br><br>
+    </body>
+</body>
+</html>
